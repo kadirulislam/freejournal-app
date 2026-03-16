@@ -24,3 +24,107 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+}
+.ProseMirror {
+  outline: none;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #111827;
+}
+
+.ProseMirror p {
+  margin: 10px 0;
+}
+
+.ProseMirror h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.ProseMirror h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding-left: 20px;
+}
+
+.ProseMirror li {
+  margin: 5px 0;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.ProseMirror th,
+.ProseMirror td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+}
+
+.ProseMirror {
+  outline: none;
+  padding: 8px 0;
+  min-height: 300px;
+  caret-color: #2563eb;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.ProseMirror ul[data-type="taskList"] {
+  list-style: none;
+  padding: 0;
+}
+
+.ProseMirror li[data-type="taskItem"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ProseMirror li[data-type="taskItem"] > label {
+  margin-right: 8px;
+}
+
+.ProseMirror {
+  padding: 10px 0;
+  min-height: 300px;
+}
+
+.ProseMirror p {
+  margin: 10px 0;
+}
+
+.ProseMirror h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.ProseMirror ul {
+  padding-left: 20px;
+}
+
+.ProseMirror li {
+  margin: 6px 0;
+}
