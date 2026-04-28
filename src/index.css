@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tippy.js/dist/tippy.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* @import "tw-animate-css";
 @plugin "@tailwindcss/typography"; */
-@import "tippy.js/dist/tippy.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -402,6 +402,28 @@
 }
 
 /* ======================== ProseMirror / Tiptap ======================== */
+.ProseMirror {
+  outline: none;
+  font-size: 18px;
+  line-height: 1.9;
+  padding: 8px 0;
+}
+
+.ProseMirror p {
+  margin: 14px 0;
+}
+
+.ProseMirror h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 28px;
+}
+
+.ProseMirror li {
+  margin: 8px 0;
+}
+
+
 .prose-editor {
   font-size: 17px;
   line-height: 1.85;

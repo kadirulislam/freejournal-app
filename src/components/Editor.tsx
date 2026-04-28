@@ -101,7 +101,7 @@ export default function Editor({ journal, onUpdate, saveStatus, setSaveStatus, o
     if (!editor) return;
     const currentContent = editor.getHTML();
     if (currentContent !== journal.content) {
-      editor.commands.setContent(journal.content || "", false);
+      editor.commands.setContent(journal.content || "", { emitUpdate: false });
     }
   }, [journal.id]);
 
@@ -178,7 +178,7 @@ export default function Editor({ journal, onUpdate, saveStatus, setSaveStatus, o
         {editor && (
           <BubbleMenu
             editor={editor}
-            tippyOptions={{ duration: 100, placement: "top" }}
+            options={{ placement: "top" }}
             className="bubble-menu"
           >
             <button
