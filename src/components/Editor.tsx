@@ -163,7 +163,7 @@ export default function Editor({ journal, onUpdate, saveStatus, setSaveStatus, o
           )}
         </div>
       </div>
-
+ 
       <div className="editor-content-area">
         <input
           ref={titleRef}
